@@ -1,0 +1,74 @@
+@import "bootstrap.min.css";
+
+$primary-text-color: #222222;
+$primary-accent-color: $blue;
+$active-text-color: #000000;
+$inactive-text-color: #555555;
+
+$primary-text-color-dark: #dddddd;
+$active-text-color-dark: #eeeeee;
+$inactive-text-color-dark: #cccccc;
+
+$active-border-color: #222222;
+$inactive-border-color: rgba(0, 0, 0, 0);
+
+$active-border-color-dark: #dddddd;
+$inactive-border-color-dark: rgba(0, 0, 0, 0);
+
+body {
+  background: #f7f7f9;
+}
+
+p {
+  text-indent: 10%;
+  line-height: 30px;
+  word-spacing: 4px;
+  color: #777777;
+  padding: 25px;
+}
+
+legend {
+  border-bottom: 1px solid $inactive-text-color-dark;
+  padding: 15px 0px;
+}
+
+h3 {
+  font-size: 20px;
+  color: $primary-accent-color;
+}
+
+#header-wrapper {
+  height: 170px;
+  .navbar {
+    height: 90px;
+    //   border-bottom: 1px solid #bbbbbb;
+
+    .nav-item {
+      cursor: pointer;
+      border-bottom: 2px solid $inactive-border-color-dark;
+
+      .nav-link {
+        color: $inactive-text-color-dark;
+      }
+
+      &:hover {
+        border-bottom: 2px solid $active-border-color-dark;
+        transition: border-bottom 500ms;
+        .nav-link {
+          color: $active-text-color-dark;
+        }
+      }
+    }
+  }
+}
+
+#content-wrapper {
+  min-height: 100vh;
+  margin-top: -70px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  //box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+#about-wrapper {
+}
